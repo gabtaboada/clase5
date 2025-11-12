@@ -74,12 +74,38 @@ main .grilla{
 }
 main .grilla div{
     /* border: 1px solid black; */
+    position: relative;
 }
-main .grilla div img,
-main .grilla section img{
+main .grilla div img{
     width: 100%;
+    object-fit: cover;
+    height: 100%;
     /* width: 150px; */
     /* border: 1px solid black; */
+}
+main .grilla div:hover::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(21, 19, 19, 0.823);
+}
+main .grilla div p{
+    width: 70%;
+    position: absolute;
+    top: calc(50% - 38px);
+    left: calc(50% - 87px);
+    color: white;
+    z-index: 2;
+    opacity: 0;
+}
+main .grilla div p:hover{
+    opacity: 1;
+}
+main .grilla div p:hover{
+    display: block;
 }
 /* main .grilla div:last-child:hover,
 main .grilla div:first-child:hover{
