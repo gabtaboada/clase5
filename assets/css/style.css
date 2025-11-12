@@ -110,7 +110,21 @@ section button:active{
     background-color: blue;
     color: white;
 }
-
+section p::before{
+    content:"antes";
+    color: red;
+}
+section p::after{
+    content:"despues";
+    color: green;
+}
+section form label::after{
+    content: "*";
+    color: red;
+}
+section form input:focus{
+    background-color: rgb(157, 143, 125);
+}
 /* EJEMPLO GRID AREA */
 /* .grid{
     border: 1px solid black;
