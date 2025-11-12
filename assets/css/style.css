@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+i{
+    color: white;
+    font-size: 30px;
+}
+i.flecha{
+    font-size: 8px;
+}
+.hamburguesa{
+    display: none;
+}
+
+header{
+    background-color: rgb(4, 4, 4);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+} 
+header nav{
+    display: flex;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    column-gap: 10px;
+    list-style: none;
+}
+header nav ul li.submenu ul{
+    display: none;
+    padding:10px ;
+    background-color: rgb(89, 88, 88);
+    position:absolute;
+}
+header nav ul li.submenu:hover ul{
+    display:block
+}
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(251, 251, 251);
+}
+
+/* main     {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+main .grilla{
+    display: grid;
+    /*grid-template-columns: 3fr 1fr 2fr;*/
+    /* grid-template-columns: 200px 1fr 200px; */
+    grid-template-columns: repeat(3,250px); 
+    grid-template-rows: repeat(2,165px);
+    /* justify-content: center; */
+    /* align-content: center; */
+    height: 100vh;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+.hijo6{
+    align-self: center;
+    justify-self: center;
+}
+main .grilla div{
+    /* border: 1px solid black; */
+}
+main .grilla div img,
+main .grilla section img{
+    width: 100%;
+    /* width: 150px; */
+    /* border: 1px solid black; */
+}
+/* main .grilla div:last-child:hover,
+main .grilla div:first-child:hover{
+    transform: scale(1.01);
+} */
+/* main .grilla div:nth-child(odd):hover{
+    transform: scale(1.01);
+} */
+/* main .grilla Section:first-of-type:hover{
+    transform: scale(1.01);
+} */
+main .grilla div:not(.hijo6):hover{
+    transform: scale(1.01);
+}
+section a:link{
+    color: red;
+}
+section a:visited{
+    color: green;
+}
+section a:hover{
+    color: blueviolet;
+}
+section a:active{
+    color: blue;
+}
+section button:active{
+    background-color: blue;
+    color: white;
+}
+
+/* EJEMPLO GRID AREA */
+/* .grid{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,100px);
+    grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "article article aside"
+            "article article aside"
+            "article article aside"
+            "footer footer footer";
+}
+
+header { 
+    background-color: aqua;
+    grid-area: header; 
+}
+nav { 
+    background-color: rgb(33, 17, 99);
+    grid-area: nav; 
+}
+article { 
+    background-color: rgb(17, 99, 20);
+    grid-area: article; 
+}
+aside { 
+    background-color: rgb(183, 186, 16);
+    grid-area: aside; 
+}
+main { 
+    height: 60%;
+    margin: 10px;
+    background-color: rgb(152, 10, 135);
+}
+footer { 
+    background-color: rgb(93, 61, 1);
+    grid-area: footer; 
+}
+
+.texto{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 800;
+} */
+
+/*tablet 768 a 991px*/
+@media (max-width: 991px){
+    .hamburguesa{
+        display: block;
+    }
+    
+    .menu{
+        display: none;
+    }
+    main .grilla{
+    grid-template-columns: repeat(2,250px); 
+    grid-template-rows: repeat(3,165px);
+    }
+}
+/* 360 a 480pxmobile */
+@media (max-width:480px){
+    margin-inline-start: ; .grilla{
+    overflow: auto;/* REVISAR ESTO*/
+    grid-template-columns: repeat(1,250px); 
+    grid-template-rows: repeat(6,165px);
+    }    
+}
+
+/* mobile first*/
+/*tablet */
+@media (min-width:576px){
+    
+}
+/*escritorio */
+@media (min-width:1180px){
+    
+}

@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border: 2px solid blue;
+    padding: 10px 30px;/*10 arriba y abajo. 30 derecha e izquierda*/
+    /* height: 100vh; */
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    list-style: none;
+    border: 2px solid black;
+}
+header nav ul li{
+    padding: 10px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(72, 5, 133);
+    font-size: 20px;
+}
+.logo{
+    border: 2px solid brown;
+}
+.hamburguesa{
+    font-size: 30px;
+}
