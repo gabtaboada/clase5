@@ -136,6 +136,7 @@ section button:active{
     background-color: blue;
     color: white;
 }
+/*  Los comento para el ejemplo de bootstrap
 section p::before{
     content:"antes";
     color: red;
@@ -143,7 +144,7 @@ section p::before{
 section p::after{
     content:"despues";
     color: green;
-}
+} */
 section form label::after{
     content: "*";
     color: red;
@@ -151,6 +152,7 @@ section form label::after{
 section form input:focus{
     background-color: rgb(157, 143, 125);
 }
+
 /* EJEMPLO GRID AREA */
 /* .grid{
     border: 1px solid black;
@@ -214,11 +216,12 @@ footer {
 }
 /* 360 a 480pxmobile */
 @media (max-width:480px){
-    margin-inline-start: ; .grilla{
-    overflow: auto;/* REVISAR ESTO*/
-    grid-template-columns: repeat(1,250px); 
-    grid-template-rows: repeat(6,165px);
-    }    
+    /* margin-inline-start: ;  */
+        main .grilla{
+        overflow: auto;/* REVISAR ESTO*/
+        grid-template-columns: repeat(1,250px); 
+        grid-template-rows: repeat(6,165px);
+        }    
 }
 
 /* mobile first*/
