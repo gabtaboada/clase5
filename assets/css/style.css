@@ -21,8 +21,9 @@ i.flecha{
 
 header{
     background-color: rgb(4, 4, 4);
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
+    align-items: center; */
     padding: 10px 30px;
 } 
 header nav{
@@ -47,7 +48,9 @@ header nav ul li a{
     text-decoration: none;
     color: rgb(251, 251, 251);
 }
-
+.navbar-toggler-icon{
+    background-image:url("../img/icons8-hamburguesa-100.png");
+}
 /* main     {
     height: 100vh;
     display: flex;
